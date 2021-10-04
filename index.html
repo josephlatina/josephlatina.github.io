@@ -3,61 +3,25 @@
 
 <head>
     <title>My Homepage Test</title>
-    <style>
-        .title {
-            text-align: center;
-            font-size: 300%;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        .navig {
-            background-color: navajowhite;
-            border: 2px solid darkolivegreen;
-            font-size: 130%;
-            font-weight: bold;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        .container {
-            background-image: url("./images/jumbotron3.jpg");
-            background-size: cover;
-            height: 750px;
-        }
-        .hero {
-            color:darkolivegreen;
-            font-size: 200%;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-align: left;
-            padding: 70px;
-        }
-        .button {
-            font-size: 70%;
-            padding: 15px;
-            padding-left: 30px;
-            padding-right: 30px;
-            border-radius: 70px;
-            background-color: burlywood;
-            color: white;
-            text-decoration: none;
-        }
-        .button:hover {
-            background-color: white;
-            color: darkolivegreen;
-        }
-        li {
-            display: inline; 
-            padding: 20px;
-        }
-        h1 {color: darkolivegreen;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
 </head>
 
-<body style="background-color: blanchedalmond; text-align: center">
+<body style="background-color: blanchedalmond">
     <!-- Header -->
     <header>
         <h1 class="title">Joseph Latina</h1>
         <!-- Navigation Bar -->
-        <nav class="navig">
+        <nav class="navig" style="text-align: center">
             <ul>
-                <li>About</li>
+                <div class="dropdown">
+                    <li>About</li>
+                    <div class="dropdown-content">
+                        <h4>About Me</h4>
+                        <h4>My Work<h4/>
+                    </div>
+                </div>
                 <li>Featured</li>
                 <li>Download</li>
                 <li>Contact Us</li>
@@ -69,13 +33,24 @@
     <!-- Jumbotron -->
     <section class="container">
         <article class="hero">
-            <h2><span>Hi there.</span> <br>Welcome to my page.</h2>
+            <h2><span>Welcome to my page.</h2>
             <h5><span>Still under construction.</span></h2>
             <a href="#" class="button">Check Profile</a>
         </article>
     </section>
 
+    <!-- About Me -->
+    <div class="row">
+        <aside>
+            <img class="image" width="200" height="200" src="images/profile.jpg">
+        </aside>
+        <aside class="profile">
+            <h3>Hey there.</h3>
+            <p>I am currently a 3rd year computer science student majoring in Computer Science and minoring in Digital Design.
+                Some of my interests include photography, dancing, travelling and casual gaming.
+            </p>
+        </aside>
+    </div>
+
 </body>
-
-
 </html>

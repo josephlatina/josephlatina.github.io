@@ -1,0 +1,85 @@
+.title {
+    text-align: center;
+    font-size: 300%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navig {
+    background-color: navajowhite;
+    border: 2px solid darkolivegreen;
+    font-size: 130%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    font-size: 80%;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 5px 5px 0px;
+    background-color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.container {
+    background-image: url("../images/jumbotron3.jpg");
+    background-size: cover;
+    height: 750px;
+}
+.hero {
+    color:darkolivegreen;
+    font-size: 200%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    padding: 70px;
+}
+.button {
+    font-size: 70%;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 70px;
+    background-color: burlywood;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px grey, 1px 1px grey;
+}
+.button:hover {
+    background-color: white;
+    color: darkolivegreen;
+}
+.image {
+    border-radius: 350px;
+    margin: 30px 50px 50px 80px;
+}
+.profile {
+    margin: 50px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+li {
+    display: inline; 
+    padding: 20px;
+}
+h1 #magenta {color: darkolivegreen;}
+h3 {
+    color:darkolivegreen;
+    font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4 {
+    /* position: absolute;
+    font-size: 80%; */
+}
+p {
+    font-size: 120%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
