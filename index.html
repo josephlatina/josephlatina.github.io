@@ -2,55 +2,61 @@
 <html lang="en">
 
 <head>
-    <title>My Homepage Test</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Code Practice 4</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body style="background-color: blanchedalmond">
+<body style="background-color: linen; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     <!-- Header -->
-    <header>
-        <h1 class="title">Joseph Latina</h1>
-        <!-- Navigation Bar -->
-        <nav class="navig" style="text-align: center">
+    <header class="container">
+        <div class="inner">
+            <h1>Photography</h1>
+        </div>
+        <nav>
             <ul>
-                <div class="dropdown">
-                    <li>About</li>
-                    <div class="dropdown-content">
-                        <h4>About Me</h4>
-                        <h4>My Work<h4/>
-                    </div>
-                </div>
-                <li>Featured</li>
-                <li>Download</li>
-                <li>Contact Us</li>
+                <li>About</li>
+                <li>Portraits</li>
+                <li>Family</li>
+                <li>Friends</li>
             </ul>
         </nav>
     </header>
-    <br>
+    <!-- Section 1 -->
+    <section class="container-fluid" id="jumbotron">
 
-    <!-- Jumbotron -->
-    <section class="container">
-        <article class="hero">
-            <h2><span>Welcome to my page.</h2>
-            <h5><span>Still under construction.</span></h2>
-            <a href="#" class="button">Check Profile</a>
-        </article>
     </section>
-
-    <!-- About Me -->
-    <div class="row">
-        <aside>
-            <img class="image" width="200" height="200" src="images/profile.jpg">
-        </aside>
-        <aside class="profile">
-            <h3>Hey there.</h3>
-            <p>I am currently a 3rd year computer science student majoring in Computer Science and minoring in Digital Design.
-                Some of my interests include photography, dancing, travelling and casual gaming.
-            </p>
-        </aside>
-    </div>
-
+    <!-- Section 2 -->
+    <section class="container-fluid">
+        <!-- Section 1 Row A -->
+        <div class="row">
+            <section class="col-4">
+                <img src="images/hyundai.jpeg">
+                <a href="http://www.davehillphoto.com/work/17045/hyundai-ioniq-5" class="button">Hyundai Ioniq</a>
+            </section>
+            <section class="col-4">
+                <img src="images/renault.jpg">
+                <a href="http://www.davehillphoto.com/work/16998/renault-megane" class="button">Renault Megane</a>
+            </section>
+            <section class="col-4">
+                <img src="images/share.jpg">
+                <a class="button" href="http://www.davehillphoto.com/work/16895/share-now" class="button">Share</a>
+            </section>
+        </div>
+        <!-- Section 1 Row B -->
+        <div class="row">
+            <section class="col-6">
+                <img src="images/romeo.jpg">
+                <a href="http://www.davehillphoto.com/work/16634/alfa-romeo-stelvio" class="button">Romeo Stelvio</a>
+            </section>
+            <section class="col-6">
+                <img src="images/mercedes.jpg">
+                <a href="http://www.davehillphoto.com/work/16777/mercedes-cla" class="button">Mercedes</a>
+            </section>
+        </div>
+    </section>
+    
 </body>
+
 </html>

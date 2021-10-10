@@ -1,0 +1,76 @@
+
+/*+++++++++++++++++++
+***Note that float fix is applied to the parent of the elements where float was used on. In this case, row.
+FLOAT FIX */
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+/*+++++++++++++++++++*/
+
+.container {
+    width: 1170px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+    /* background-color: darkolivegreen */
+}
+
+.container-fluid {
+    /* background-color: burlywood; */
+    height: 680px;
+    margin-top: 10px;
+}
+
+.row {
+    margin-bottom: 50px;
+    /* background-color: blanchedalmond */
+}
+
+#jumbotron {
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    height: 750px;
+}
+
+.container-fluid .row {
+    width: 1170px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: yellow; */
+}
+.container-fluid .row img{
+    width: 360px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.col-4 {
+    width:360px;
+    height: 300px;
+    /* background-color: pink; */
+    float: left;
+    margin: 0 15px;
+    
+}
+
+.button {
+    margin-left: 110px;
+    margin-right: auto;
+}
+
+.col-6 {
+    width:555px;
+    /* background-color: pink; */
+    float: left;
+    margin: 0 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
