@@ -27,6 +27,7 @@ header .inner {
   margin-left: 20px;
 }
 header li {
+  color: black;
   display: inline; 
   padding: 20px;
 }
