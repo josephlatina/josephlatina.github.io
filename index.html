@@ -2,60 +2,92 @@
 <html lang="en">
 
 <head>
-    <title>Code Practice 4</title>
+    <title>Code Practice 5</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: linen; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+<!-- <body style="background-color: whitesmoke; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> -->
+<body style="background-color: whitesmoke; font-family: 'Poppins', sans-serif;">
     <!-- Header -->
     <header class="container">
         <div class="inner">
-            <h1>Photography</h1>
+            <h1>Joseph Latina</h1>
         </div>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Portraits</li>
-                <li>Family</li>
-                <li>Friends</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portraits.html">Portraits</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
             </ul>
         </nav>
     </header>
+
     <!-- Section 1 -->
     <section class="container-fluid" id="jumbotron">
 
     </section>
-    <!-- Section 2 -->
-    <section class="container-fluid">
-        <!-- Section 1 Row A -->
-        <div class="row">
-            <section class="col-4">
-                <img src="images/hyundai.jpeg">
-                <a href="http://www.davehillphoto.com/work/17045/hyundai-ioniq-5" class="button">Hyundai Ioniq</a>
-            </section>
-            <section class="col-4">
-                <img src="images/renault.jpg">
-                <a href="http://www.davehillphoto.com/work/16998/renault-megane" class="button">Renault Megane</a>
-            </section>
-            <section class="col-4">
-                <img src="images/share.jpg">
-                <a class="button" href="http://www.davehillphoto.com/work/16895/share-now" class="button">Share</a>
-            </section>
+
+     <!-- Section 2 -->
+     <section class="container" id="about">
+        <div class="col-6">
+            <img width="400" height="400" src="images/profile.jpg">
+            <!-- <img id="profile" width="400" height="400" src="images/profile.jpg"> -->
         </div>
-        <!-- Section 1 Row B -->
-        <div class="row">
-            <section class="col-6">
-                <img src="images/romeo.jpg">
-                <a href="http://www.davehillphoto.com/work/16634/alfa-romeo-stelvio" class="button">Romeo Stelvio</a>
-            </section>
-            <section class="col-6">
-                <img src="images/mercedes.jpg">
-                <a href="http://www.davehillphoto.com/work/16777/mercedes-cla" class="button">Mercedes</a>
-            </section>
+        <div class="col-6" id="aboutMessage">
+            <h1 >MY NAME IS JOE.</h1>
+            <p>I am currently a 3rd year computer science student majoring in Computer Science and minoring in Digital Design.
+                Some of my interests include photography, dancing, travelling and casual gaming.
+            </p>
+            <a href="about.html" class="button">Read More</a>
         </div>
     </section>
+
+    <!-- Section 3 -->
+    <section class="container" id="category">
+        <!-- Section 3 Row A -->
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    <h1>PORTRAITS</h1>
+                    <a href="portraits.html" class="button">See More</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <img id="img1" width="500" height="800" src="images/pic1.jpg">
+            </div>
+        </div>
+        <!-- Section 3 Row B -->
+        <div class="row">
+            <div class="col-6">
+                <img width="550" height="800" src="images/pic2.jpg">
+            </div>
+            <div class="col-6">
+                <div>
+                    <h1>FAMILY</h1>
+                    <a href="family.html" class="button">See More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Section 3 Row C -->
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    <h1>FRIENDS</h1>
+                    <a href="friends.html" class="button">See More</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <img width="550" height="800" src="images/pic3.jpg">
+            </div>
+        </div>
+    </section>
+
+
     
 </body>
 

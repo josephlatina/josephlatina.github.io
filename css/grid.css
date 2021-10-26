@@ -13,28 +13,34 @@ FLOAT FIX */
 /*+++++++++++++++++++*/
 
 .container {
-    width: 1170px;
+    width: 1210px;
     height: 250px;
     margin: 0 auto;
     margin-top: 10px;
     /* background-color: darkolivegreen */
 }
 
+.container .row {
+    width: 1210px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle; 
+    position: relative;
+}
+.container #aboutme {
+    height: 750px;
+}
 .container-fluid {
-    /* background-color: burlywood; */
     height: 680px;
     margin-top: 10px;
 }
 
 .row {
     margin-bottom: 50px;
-    /* background-color: blanchedalmond */
-}
-
-#jumbotron {
-    background-image: url("../images/cover.jpg");
-    background-size: cover;
-    height: 750px;
 }
 
 .container-fluid .row {
@@ -44,7 +50,6 @@ FLOAT FIX */
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: yellow; */
 }
 .container-fluid .row img{
     width: 360px;
@@ -54,11 +59,9 @@ FLOAT FIX */
 
 .col-4 {
     width:360px;
-    height: 300px;
-    /* background-color: pink; */
+    height: 800px;
     float: left;
     margin: 0 15px;
-    
 }
 
 .button {
@@ -68,9 +71,22 @@ FLOAT FIX */
 
 .col-6 {
     width:555px;
-    /* background-color: pink; */
+    height: 270px;
     float: left;
     margin: 0 15px;
     padding-left: 100px;
     padding-right: 100px;
 }
+#category .col-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle; 
+}
+#aboutme .col-6 {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

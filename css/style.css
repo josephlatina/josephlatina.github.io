@@ -19,21 +19,7 @@ html {
   clear: both;
 }
 /*+++++++++++++++++++*/
-.button {
-  font-size: 100%;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 70px;
-  background-color: darkolivegreen;
-  color: white;
-  text-decoration: none;
-  box-shadow: 5px 5px grey, 1px 1px grey;
-}
-.button:hover {
-  background-color: white;
-  color: darkolivegreen;
-}
+
 header .inner {
   position: absolute;
   z-index: 10;
@@ -44,10 +30,14 @@ header li {
   display: inline; 
   padding: 20px;
 }
-header li:hover{
-  display: inline; 
-  padding: 20px;
-  color: darkolivegreen;
+a {
+  text-decoration: none;
+}
+header li a:visited {
+  color: black;
+}
+header li a:hover{
+  color: tan;
   cursor: pointer;
 }
 nav {
@@ -55,4 +45,60 @@ nav {
   position: absolute;
   top: 124px;
   right: 9.75%;
+}
+#about h1 {
+  color: burlywood;
+  text-align: center;
+}
+#about img {
+  border-radius: 350px;
+  /* position: absolute;
+  bottom: 150px; */
+}
+#category h1 {
+  text-align: center;
+}
+#img1 {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+p {
+  margin-bottom: 50px;
+}
+.button {
+  font-size: 80%;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: tan;
+  color: white;
+  text-decoration: none;
+  display: table;
+  margin: 0 auto;
+}
+.button:hover {
+  background-color: dimgray;
+  color: white;
+}
+#about {
+  height: 800px;
+  /* display: flex;
+  flex-direction: row; */
+  padding: 130px 10px;
+  position: relative;
+}
+#aboutMessage {
+  margin: 70px 10px;
+}
+#profile {
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+  z-index: 5;
+}
+#jumbotron {
+  background-image: url("../images/cover3.jpg");
+  background-size: cover;
+  height: 750px;
 }
