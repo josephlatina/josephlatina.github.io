@@ -20,11 +20,39 @@ html {
 }
 /*+++++++++++++++++++*/
 
-header .inner {
-  position: absolute;
-  z-index: 10;
-  top: 100px;
-  margin-left: 20px;
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+#nav-sm {
+  display: none;
+}
+#nav-lg {
+  display: none;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 991px) {
+  header .inner {
+    display: none;
+  }
+  #nav-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  header .inner {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    margin-left: 20px;
+  }
+  #nav-lg {
+    display: block;
+  }
 }
 header li {
   color: black;
@@ -33,6 +61,7 @@ header li {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 header li a:visited {
   color: black;
@@ -47,22 +76,50 @@ nav {
   top: 124px;
   right: 9.75%;
 }
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='tan' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler.navbar-toggler {
+  border-color: tan;
+} 
+.container-fluid div section {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#about {
+  height: 600px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+#about div section {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 50px;
+}
 #about h1 {
   color: burlywood;
   text-align: center;
 }
+#about p {
+  text-align: center;
+}
 #about img {
-  border-radius: 350px;
-  /* position: absolute;
-  bottom: 150px; */
+  border-radius: 200px;
+}
+
+#first-container{
+  margin-top: 200px;
 }
 #category h1 {
   text-align: center;
 }
-#img1 {
-  position: absolute;
-  top: 0px;
-  right: 30px;
+#category div div {
+  margin-top: 50px;
 }
 p {
   margin-bottom: 50px;
@@ -82,16 +139,6 @@ p {
   background-color: dimgray;
   color: white;
 }
-#about {
-  height: 800px;
-  /* display: flex;
-  flex-direction: row; */
-  padding: 130px 10px;
-  position: relative;
-}
-#aboutMessage {
-  margin: 70px 10px;
-}
 #profile {
   position: absolute;
   bottom: 5px;
@@ -102,4 +149,6 @@ p {
   background-image: url("../images/cover3.jpg");
   background-size: cover;
   height: 750px;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
