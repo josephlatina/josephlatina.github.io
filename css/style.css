@@ -41,30 +41,70 @@ html {
   #nav-sm {
     display: block;
   }
+  #about {
+    height: 900px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    background-color: #4C443C;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  #first-container {
+    margin-top: 50px;
+  }
+  .secondary header {
+    min-height: 160px;
+    line-height: 100px;
+  }
 }
 
 @media only screen and (min-width: 992px){
   header .inner {
     position: absolute;
     z-index: 10;
-    top: 100px;
+    top: 50px;
     margin-left: 20px;
   }
   #nav-lg {
     display: block;
   }
+  #about {
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    background-color: #4C443C;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  #first-container{
+    margin-top: 100px;
+  }
+  .secondary header {
+    height: 150px;
+  }
+}
+header {
+  color: white;
+  background-color: #1C1C1C;
+}
+
+header h1 {
+  margin-left: 80px;
+  text-align: center;
 }
 header li {
-  color: black;
+  color: white;
   display: inline; 
   padding: 20px;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 header li a:visited {
-  color: black;
+  color: white;
 }
 header li a:hover{
   color: tan;
@@ -73,7 +113,7 @@ header li a:hover{
 nav {
   text-align: right;
   position: absolute;
-  top: 124px;
+  top: 70px;
   right: 9.75%;
 }
 .navbar-toggler .navbar-toggler-icon {
@@ -90,11 +130,7 @@ nav {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-#about {
-  height: 600px;
-  margin-top: 20px;
-  margin-bottom: 150px;
-}
+
 #about div section {
   display: flex; 
   justify-content: center; 
@@ -107,14 +143,12 @@ nav {
 }
 #about p {
   text-align: center;
+  color: white;
 }
 #about img {
   border-radius: 200px;
 }
 
-#first-container{
-  margin-top: 200px;
-}
 #category h1 {
   text-align: center;
 }
@@ -129,15 +163,16 @@ p {
   padding: 15px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: tan;
+  background-color: #501404;
   color: white;
   text-decoration: none;
   display: table;
   margin: 0 auto;
 }
 .button:hover {
-  background-color: dimgray;
-  color: white;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 #profile {
   position: absolute;
@@ -146,9 +181,23 @@ p {
   z-index: 5;
 }
 #jumbotron {
-  background-image: url("../images/cover3.jpg");
+  background-image: url("../images/jumbotron.jpg");
   background-size: cover;
   height: 750px;
-  margin-top: 200px;
+  /* margin-top: 50px; */
   margin-bottom: 100px;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #1C1C1C;
+  margin-top: 100px;
+  height: 200px;
+  color: white;
+}
+.footer-content h1 {
+  margin-top: 80px;
 }
