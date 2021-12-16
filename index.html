@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Practice 7</title>
+    <title>Ptarmigan</title>
     <!-- Normalize CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- Bootstrap CSS -->
@@ -16,30 +16,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
 </head>
 
-<!-- <body style="background-color: whitesmoke; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> -->
-<body style="background-color: whitesmoke; font-family: 'Montserrat', sans-serif;">
+<body style="font-family: 'Montserrat', sans-serif;">
     <!-- Header -->
-    <header class="container-fluid">
-        <div class="inner">
-            <h1>Joseph Latina</h1>
+    <header class="container head">
+        <div class="logo">
+            <a href="index.html"><img src="images/Ptarmigan_Logo.svg"></a>
         </div>
         <div id="nav-lg">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portraits.html">Portraits</a></li>
-                    <li><a href="family.html">Family</a></li>
-                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
         <div id="nav-sm">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <h1>Joseph Latina</h1>
                     <!-- Unclicked -->
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,11 +45,10 @@
                     <!-- Clicked -->
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="portraits.html">Portraits</a></li>
-                        <li><a href="family.html">Family</a></li>
-                        <li><a href="friends.html">Friends</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                   </div>
                 </div>
@@ -59,74 +56,169 @@
         </div>
     </header>
 
-    <!-- Section 1 -->
-    <section class="container-fluid" id="jumbotron">
-
+    <!-- Section 1: Jumbotron -->
+    <section class="container-fluid jumbotron">
+        <div class="container">
+            <!-- Title -->
+            <div class="row">
+                <h1>PTARMIGAN</h1>
+            </div>
+            <!-- Subtitle -->
+            <div class="row">
+                <h5>Let us build for you!</h5>
+            </div>
+            <!--Call to Action-->
+            <div class="row">
+                <a href="contact.html" class="button">CONTACT US</a>
+            </div>
+        </div>
     </section>
 
-     <!-- Section 2 -->
-     <section class="container-fluid" id="about">
+    <!-- Section 2: Products -->
+    <section class="container-fluid" id="product-service">
         <div class="row">
+            <!-- Image -->
             <section class="col-sm-12 col-lg-6">
-                <img width="400" height="400" src="images/profile.jpg">
+                <img src="images/products.jpg">
             </section>
-            <section class="col-sm-12 col-lg-4 offset-lg-1">
-                <div>
-                    <h1 >MY NAME IS JOE.</h1>
-                    <p>I am currently a 3rd year computer science student majoring in Computer Science and minoring in Digital Design.
-                        Some of my interests include photography, dancing, travelling and casual gaming.
+            <!-- Description -->
+            <section class="col-sm-12 col-lg-6 description">
+                <div class="col-9">
+                    <p >Our handcrafted furniture is made from distinctive hardwoods, 
+                        bronze, art glass, stainless steel, and other unique materials.
+                        Hardwoods used in our designs include Mango, Wild Cherry, 
+                        Big Leaf Maple, English Walnut, Silver Maple, and American cherry.
                     </p>
-                    <a href="about.html" class="button">Read More</a>
+                    <a href="products.html" class="button">SEE MORE</a>
                 </div>
+            </section>
+            <section>
+                <h1>PRODUCTS</h1>
             </section>
         </div>
     </section>
 
-    <!-- Section 3 -->
-    <section class="container-fluid" id="category">
-        
+    <!-- Section 3: Services -->
+    <section class="container-fluid" id="product-service">
         <div class="row">
-            <!-- Portraits -->
-            <section class="col-sm-4 col-xxl-2">
-                <div>
-                    <h1>PORTRAITS</h1>
-                    <a href="portraits.html" class="button">See More</a>
+            <!-- Description -->
+            <section class="col-sm-12 col-lg-6 description">
+                <div class="col-9">
+                    <p class="offset-1">From an interior refresh to full-scale remodelling, we offer a variety of customer
+                        services personalized for our client’s residential and commercial projects.
+                    </p>
+                    <a href="services.html" class="button">SEE MORE</a>
                 </div>
             </section>
-            <div class="col-sm-8 col-xxl-4">
-                <img width="550" height="800" src="images/pic1.jpg">
-            </div>
-            <!-- Family -->
-            <section class="col-sm-4 col-xxl-2">
-                <div>
-                    <h1>FAMILY</h1>
-                    <a href="family.html" class="button">See More</a>
-                </div>
+            <!-- Image -->
+            <section class="col-sm-12 col-lg-6">
+                <img src="images/services.jpg">
             </section>
-            <div class="col-sm-8 col-xxl-4">
-                <img width="550" height="800" src="images/pic2.jpg">
-            </div>
+            <section>
+                <h1>SERVICES</h1>
+            </section>
         </div>
+    </section>
+
+    <!-- Section 4: Gallery -->
+    <section class="container" id="gallery">
+        
+        <!-- Top Images -->
         <div class="row">
-            <!-- Friends -->
-            <section class="col-sm-4 col-xxl-2">
-                <div>
-                    <h1>FRIENDS</h1>
-                    <a href="friends.html" class="button">See More</a>
-                </div>
+            <section class="col-sm-12 col-lg-4" >
+                <img src="images/top_left_image.jpg">
             </section>
-            <div class="col-sm-8 col-xxl-4">
-                <img width="550" height="800" src="images/pic3.jpg">
+            <section class="col-sm-12 col-lg-4">
+                <img src="images/top_mid_image.jpg">
+            </section>
+            <section class="col-sm-12 col-lg-4">
+                <img src="images/top_right_iamge.jpg">
+            </section>
+        </div>
+
+        <!-- Adjective 1 -->
+        <div class="row">
+            <div class="adj-1">
+                <!-- Hand-Craft -->
+                <h1>HAND-CRAFT.</h1>
+            </div>
+
+            <!-- Adjective 2 -->
+            <div class="adj-2">
+                <!-- Timeless -->
+                <h1>TIMELESS.</h1>
+            </div>
+
+            <!-- Adjective 3 -->
+            <div class="adj-3">
+                <!-- Sustainable -->
+                <h1>SUSTAINABLE.</h1>
             </div>
         </div>
 
+        <!-- Bottom Images -->
+        <div class="row">
+            <section class="col-sm-12 col-lg-4" >
+                <img src="images/bottom_left_image.jpg">
+            </section>
+            <section class="col-sm-12 col-lg-4">
+                <img src="images/bottom_mid_image.jpg">
+            </section>
+            <section class="col-sm-12 col-lg-4">
+                <img src="images/bottom_right_image.jpg">
+            </section>
+        </div>
+
+    </section>
+
+    <!-- Section 5: Call to Action -->
+    <section class="container" id="call-to-action">
+        <!-- Header -->
+        <div class="row">
+            <h1>Get in touch with us.</h1>
+        </div>
+        <!-- Sub-Header -->
+        <div class="row">
+            <h5>We're here to help you!</h5>
+        </div>
+        <!-- Button -->
+        <div class="row">
+            <a href="contact.html" class="button">CONTACT US</a>
+        </div>
+    
     </section>
 
     <!-- Footer -->
-    <footer class="container-fluid">
-        <div class="footer-content">
-            <h1>Joseph Latina</h1>
-            <p>copyright © Joseph Latina</p>
+    <footer class="container-fluid" id="footer-content">
+        <div class="row">
+            <!-- Quick Links -->
+            <section class="col-sm-12 col-lg-4">
+                <div>
+                    <h5>QUICK LINKS</h5>
+                    <ul class="offset-left-2">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Logo -->
+            <section class="col-sm-12 col-lg-4">
+                <a href="#"><img id="logo" src="images/Ptarmigan_Logo.svg"></a>
+            </section>
+            <!-- Social Media -->
+            <section class="col-sm-12 col-lg-4">
+                <div>
+                    <h5>CONNECT WITH US</h5>
+                    <img src="images/fb_icon.png">
+                    <img src="images/twitter_icon.png">
+                    <img src="images/instagram_icon.png">
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <h5>2589 51 AVE, SUITE 316, EDMONTON, AB | 780.240.3685</h5>
         </div>
     </footer>
 
