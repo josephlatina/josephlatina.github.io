@@ -1,2 +1,3 @@
 # josephlatina.github.io
-Joseph's website space for DESN340. Created a photography website using HTML and CSS.
+Joseph's website space.
+Currently, the code repository contains files relevant to Shopify Intern Application.
