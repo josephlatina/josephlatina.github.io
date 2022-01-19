@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Author: Joseph Latina -->
 <head>
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ptarmigan</title>
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <title>NASA-API</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
 		rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
@@ -14,218 +13,128 @@
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 
-<body style="font-family: 'Montserrat', sans-serif;">
-    <!-- Header -->
-    <header class="container head">
-        <div class="logo">
-            <a href="index.html"><img src="images/Ptarmigan_Logo.svg"></a>
-        </div>
-        <div id="nav-lg">
-            <nav>
-                <ul>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="products.html">PRODUCTS</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="nav-sm">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <!-- Unclicked -->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                    <!-- Clicked -->
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </div>
+<body style="font-family: 'Poppins', sans-serif;">
+    <div class="site-wrapper">
+        <!-- Section 1: Landing Page 1 -->
+        <section class="container-fluid" id="landing-page-1">
+            <div class="row center" id="web-view">
+                <div class="col-6">
+                    <h1>Spacestagram</h1>
+                    <h5>Image-sharing from the final frontier</h5>
+                    <br>
+                    <a href="#landing-page-2" class="button" id="landing-button">EXPLORE</a>
                 </div>
-              </nav>
-        </div>
-    </header>
-
-    <!-- Section 1: Jumbotron -->
-    <section class="container-fluid jumbotron">
-        <div class="container">
-            <!-- Title -->
-            <div class="row">
-                <h1>PTARMIGAN</h1>
-            </div>
-            <!-- Subtitle -->
-            <div class="row">
-                <h5>Let us build for you!</h5>
-            </div>
-            <!--Call to Action-->
-            <div class="row">
-                <a href="contact.html" class="button">CONTACT US</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 2: Products -->
-    <section class="container-fluid" id="product-service">
-        <div class="row">
-            <!-- Image -->
-            <section class="col-sm-12 col-lg-6">
-                <img src="images/products.jpg">
-            </section>
-            <!-- Description -->
-            <section class="col-sm-12 col-lg-6 description">
-                <div class="col-9">
-                    <p >Our handcrafted furniture is made from distinctive hardwoods, 
-                        bronze, art glass, stainless steel, and other unique materials.
-                        Hardwoods used in our designs include Mango, Wild Cherry, 
-                        Big Leaf Maple, English Walnut, Silver Maple, and American cherry.
-                    </p>
-                    <a href="products.html" class="button">SEE MORE</a>
+                <div class="col-6 image-container">
+                    <img class="col-10" src="images/planet-2.png" alt="planet">
                 </div>
-            </section>
-            <section>
-                <h1>PRODUCTS</h1>
-            </section>
-        </div>
-    </section>
-
-    <!-- Section 3: Services -->
-    <section class="container-fluid" id="product-service">
-        <div class="row">
-            <!-- Description -->
-            <section class="col-sm-12 col-lg-6 description">
-                <div class="col-9">
-                    <p class="offset-1">From an interior refresh to full-scale remodelling, we offer a variety of customer
-                        services personalized for our client’s residential and commercial projects.
-                    </p>
-                    <a href="services.html" class="button">SEE MORE</a>
+            </div>
+            <div class="row" id="mobile-view">
+                <div class="image-container">
+                    <img src="images/planet-2.png" alt="planet">
                 </div>
-            </section>
-            <!-- Image -->
-            <section class="col-sm-12 col-lg-6">
-                <img src="images/services.jpg">
-            </section>
-            <section>
-                <h1>SERVICES</h1>
-            </section>
-        </div>
-    </section>
-
-    <!-- Section 4: Gallery -->
-    <section class="container" id="gallery">
-        
-        <!-- Top Images -->
-        <div class="row">
-            <section class="col-sm-12 col-lg-4" >
-                <img src="images/top_left_image.jpg">
-            </section>
-            <section class="col-sm-12 col-lg-4">
-                <img src="images/top_mid_image.jpg">
-            </section>
-            <section class="col-sm-12 col-lg-4">
-                <img src="images/top_right_iamge.jpg">
-            </section>
-        </div>
-
-        <!-- Adjective 1 -->
-        <div class="row">
-            <div class="adj-1">
-                <!-- Hand-Craft -->
-                <h1>HAND-CRAFT.</h1>
+                <div class="col-12 landing-message">
+                    <h1>Spacestagram</h1>
+                    <h5>Image-sharing from the final frontier</h5>
+                    <br>
+                    <a href="#landing-page-2" class="button" id="landing-button">EXPLORE</a>
+                </div>
             </div>
+        </section>
 
-            <!-- Adjective 2 -->
-            <div class="adj-2">
-                <!-- Timeless -->
-                <h1>TIMELESS.</h1>
-            </div>
 
-            <!-- Adjective 3 -->
-            <div class="adj-3">
-                <!-- Sustainable -->
-                <h1>SUSTAINABLE.</h1>
-            </div>
-        </div>
-
-        <!-- Bottom Images -->
-        <div class="row">
-            <section class="col-sm-12 col-lg-4" >
-                <img src="images/bottom_left_image.jpg">
-            </section>
-            <section class="col-sm-12 col-lg-4">
-                <img src="images/bottom_mid_image.jpg">
-            </section>
-            <section class="col-sm-12 col-lg-4">
-                <img src="images/bottom_right_image.jpg">
-            </section>
-        </div>
-
-    </section>
-
-    <!-- Section 5: Call to Action -->
-    <section class="container" id="call-to-action">
-        <!-- Header -->
-        <div class="row">
-            <h1>Get in touch with us.</h1>
-        </div>
-        <!-- Sub-Header -->
-        <div class="row">
-            <h5>We're here to help you!</h5>
-        </div>
-        <!-- Button -->
-        <div class="row">
-            <a href="contact.html" class="button">CONTACT US</a>
-        </div>
-    
-    </section>
-
-    <!-- Footer -->
-    <footer class="container-fluid" id="footer-content">
-        <div class="row">
-            <!-- Quick Links -->
-            <section class="col-sm-12 col-lg-4">
-                <div>
-                    <h5>QUICK LINKS</h5>
-                    <ul class="offset-left-2">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+         <!-- Section 2: Landing Page 2 -->
+         <section class="container-fluid" id="landing-page-2">
+            <div class="row carousel center-col">
+                <!-- Left Arrow -->
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <img src="images/left-button.png">
+                </button>
+                <!-- Slides -->
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <!-- Image 1 -->
+                        <li class="carousel__slide current-slide">
+                            <div>
+                                <h1>Astronomy Picture of the Day</h1>
+                                <h4 class="title"></h4>
+                                <h5 class="date"></h5>
+                            </div>
+                            <img class="apod carousel__image" alt="">
+                            <p class="col-lg-10 col-xxl-8 description"></p>
+                            <div class="like-btn">
+                                <img class="heart" src="images/heart.png">
+                                <h5 class="text">Like</h5>
+                            </div>
+                        </li>
+                        <!-- Image 2 -->
+                        <li class="carousel__slide">
+                            <div>
+                                <h1>Mars Rover Picture</h1>
+                                <h4 class="mars-1-title"></h4>
+                                <h5 class="mars-1-date"></h5>
+                            </div>
+                            <div class="mars-1">
+                            </div>
+                            <div class="like-btn">
+                                <img class="heart" src="images/heart.png">
+                                <h5 class="text">Like</h5>
+                            </div>
+                        </li>
+                        <!-- Image 3 -->
+                        <li class="carousel__slide">
+                            <div>
+                                <h1>Mars Rover Picture</h1>
+                                <h4 class="mars-2-title"></h4>
+                                <h5 class="mars-2-date"></h5>
+                            </div>
+                            <div class="mars-2"></div>
+                            <div class="like-btn">
+                                <img class="heart" src="images/heart.png">
+                                <h5 class="text">Like</h5>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </section>
-            <!-- Logo -->
-            <section class="col-sm-12 col-lg-4">
-                <a href="#"><img id="logo" src="images/Ptarmigan_Logo.svg"></a>
-            </section>
-            <!-- Social Media -->
-            <section class="col-sm-12 col-lg-4">
-                <div>
-                    <h5>CONNECT WITH US</h5>
-                    <img src="images/fb_icon.png">
-                    <img src="images/twitter_icon.png">
-                    <img src="images/instagram_icon.png">
+                <!-- Right Arrow-->
+                <button class="carousel__button carousel__button--right">
+                    <img src="images/right-button.png">
+                </button>
+                <!-- Carousel Navigation -->
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
                 </div>
-            </section>
-        </div>
-        <div class="row">
-            <h5>2589 51 AVE, SUITE 316, EDMONTON, AB | 780.240.3685</h5>
-        </div>
-    </footer>
+            </div>
+            
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-    crossorigin="anonymous"></script>
-    
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+        <!-- Link to JS file -->
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/carousel.js"></script>
+        <!-- Loader -->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+    </div>
 </body>
 
 
